@@ -79,413 +79,696 @@ export default function DirectToFabricPage() {
   ];
 
   return (
-    <main
-      style={{
-        minHeight: "100vh",
-        background:
-          "radial-gradient(circle at 80% 10%, rgba(0,140,255,0.10), transparent 30%), radial-gradient(circle at 20% 80%, rgba(255,0,180,0.08), transparent 30%), #03060b",
-        color: "white",
-        fontFamily: "Arial, Helvetica, sans-serif",
-      }}
-    >
-      {/* HEADER */}
-      <header
-        style={{
-          height: "110px",
-          borderBottom: "1px solid rgba(255,255,255,0.08)",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "space-between",
-          padding: "0 7%",
-          position: "sticky",
-          top: 0,
-          zIndex: 20,
-          background: "rgba(3,6,11,0.88)",
-          backdropFilter: "blur(14px)",
-        }}
-      >
-        <Link
-          href="/#machines"
-          style={{
-            color: "white",
-            textDecoration: "none",
-            fontSize: "16px",
-            fontWeight: 800,
-          }}
-        >
-          ← BACK TO MACHINES
-        </Link>
+    <>
+      <style>{`
+        * {
+          box-sizing: border-box;
+        }
 
-        <div
-          style={{
-            fontSize: "25px",
-            fontWeight: 900,
-            letterSpacing: "-1px",
-          }}
-        >
-          <span style={{ color: "#35c7ff" }}>NX</span>{" "}
-          <span>NEXIX NX</span>
-        </div>
-      </header>
+        html,
+        body {
+          max-width: 100%;
+          overflow-x: hidden;
+        }
 
-      {/* HERO */}
-      <section
-        style={{
-          textAlign: "center",
-          padding: "90px 20px 70px",
-          maxWidth: "1200px",
-          margin: "0 auto",
-        }}
-      >
-        <div
-          style={{
-            color: "#42c9ff",
-            letterSpacing: "7px",
-            fontSize: "14px",
-            fontWeight: 800,
-            marginBottom: "22px",
-          }}
-        >
-          DIGITAL TEXTILE TECHNOLOGY
-        </div>
+        .dtfPage {
+          width: 100%;
+          min-height: 100vh;
+          overflow-x: hidden;
+          background:
+            radial-gradient(
+              circle at 80% 10%,
+              rgba(0,140,255,0.10),
+              transparent 30%
+            ),
+            radial-gradient(
+              circle at 20% 80%,
+              rgba(255,0,180,0.08),
+              transparent 30%
+            ),
+            #03060b;
+          color: white;
+          font-family: Arial, Helvetica, sans-serif;
+        }
 
-        <h1
-          style={{
-            fontSize: "clamp(48px, 7vw, 88px)",
-            lineHeight: 0.95,
-            margin: 0,
-            fontWeight: 900,
-            letterSpacing: "-4px",
-          }}
-        >
-          Direct-to-Fabric
-          <br />
-          <span
-            style={{
-              background:
-                "linear-gradient(90deg,#42c9ff,#7765ff,#ed3ba9)",
-              WebkitBackgroundClip: "text",
-              WebkitTextFillColor: "transparent",
-            }}
-          >
-            Printers
-          </span>
-        </h1>
+        .dtfHeader {
+          width: 100%;
+          min-height: 110px;
+          border-bottom: 1px solid rgba(255,255,255,0.08);
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 0 7%;
+          position: sticky;
+          top: 0;
+          z-index: 20;
+          background: rgba(3,6,11,0.88);
+          backdrop-filter: blur(14px);
+        }
 
-        <p
-          style={{
-            maxWidth: "850px",
-            margin: "30px auto 0",
-            color: "#9caabd",
-            fontSize: "19px",
-            lineHeight: 1.7,
-          }}
-        >
-          Advanced direct-to-fabric printing technology engineered for
-          high-quality textile production, reliable operation and industrial
-          productivity.
-        </p>
-      </section>
+        .dtfBack {
+          color: white;
+          text-decoration: none;
+          font-size: 16px;
+          font-weight: 800;
+          white-space: nowrap;
+        }
 
-      {/* MACHINES */}
-      <section
-        style={{
-          maxWidth: "1450px",
-          margin: "0 auto",
-          padding: "0 30px 100px",
-        }}
-      >
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(500px, 1fr))",
-            gap: "30px",
-          }}
-        >
-          {machines.map((machine) => (
-            <article
-              key={machine.name}
-              style={{
-                border: "1px solid rgba(255,255,255,0.12)",
-                borderRadius: "22px",
-                overflow: "hidden",
-                background:
-                  "linear-gradient(145deg, rgba(16,24,38,0.96), rgba(5,9,16,0.96))",
-                boxShadow: "0 20px 60px rgba(0,0,0,0.25)",
-              }}
-            >
-              {/* IMAGE */}
-              <div
-                style={{
-                  height: "360px",
-                  padding: "25px",
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  background:
-                    "radial-gradient(circle, rgba(35,70,110,0.18), transparent 65%)",
-                }}
+        .dtfBrand {
+          font-size: 25px;
+          font-weight: 900;
+          letter-spacing: -1px;
+          white-space: nowrap;
+        }
+
+        .dtfHero {
+          width: 100%;
+          max-width: 1200px;
+          margin: 0 auto;
+          padding: 90px 20px 70px;
+          text-align: center;
+        }
+
+        .dtfEyebrow {
+          color: #42c9ff;
+          letter-spacing: 7px;
+          font-size: 14px;
+          font-weight: 800;
+          margin-bottom: 22px;
+        }
+
+        .dtfHeroTitle {
+          font-size: clamp(48px, 7vw, 88px);
+          line-height: 0.95;
+          margin: 0;
+          font-weight: 900;
+          letter-spacing: -4px;
+        }
+
+        .dtfGradient {
+          background: linear-gradient(
+            90deg,
+            #42c9ff,
+            #7765ff,
+            #ed3ba9
+          );
+          -webkit-background-clip: text;
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+
+        .dtfHeroText {
+          max-width: 850px;
+          margin: 30px auto 0;
+          color: #9caabd;
+          font-size: 19px;
+          line-height: 1.7;
+        }
+
+        .dtfMachines {
+          width: 100%;
+          max-width: 1450px;
+          margin: 0 auto;
+          padding: 0 30px 100px;
+        }
+
+        .dtfMachineGrid {
+          width: 100%;
+          display: grid;
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+          gap: 30px;
+        }
+
+        .dtfMachineCard {
+          width: 100%;
+          min-width: 0;
+          border: 1px solid rgba(255,255,255,0.12);
+          border-radius: 22px;
+          overflow: hidden;
+          background:
+            linear-gradient(
+              145deg,
+              rgba(16,24,38,0.96),
+              rgba(5,9,16,0.96)
+            );
+          box-shadow: 0 20px 60px rgba(0,0,0,0.25);
+        }
+
+        .dtfMachineImage {
+          width: 100%;
+          height: 360px;
+          padding: 25px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background:
+            radial-gradient(
+              circle,
+              rgba(35,70,110,0.18),
+              transparent 65%
+            );
+        }
+
+        .dtfMachineImage img {
+          display: block;
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+
+        .dtfMachineContent {
+          width: 100%;
+          padding: 35px;
+        }
+
+        .dtfCategory {
+          font-size: 12px;
+          font-weight: 900;
+          letter-spacing: 4px;
+          margin-bottom: 15px;
+        }
+
+        .dtfMachineName {
+          font-size: 38px;
+          margin: 0 0 18px;
+          font-weight: 900;
+          letter-spacing: -1px;
+        }
+
+        .dtfDescription {
+          color: #9caabd;
+          line-height: 1.7;
+          font-size: 16px;
+          margin: 0;
+        }
+
+        .dtfSpecs {
+          display: grid;
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+          gap: 12px;
+          margin-top: 30px;
+        }
+
+        .dtfSpec {
+          min-width: 0;
+          padding: 18px;
+          border-radius: 10px;
+          background: rgba(255,255,255,0.035);
+          border: 1px solid rgba(255,255,255,0.07);
+        }
+
+        .dtfSpecLabel {
+          color: #6f7d91;
+          font-size: 10px;
+          font-weight: 900;
+          letter-spacing: 2px;
+          margin-bottom: 8px;
+        }
+
+        .dtfSpecValue {
+          color: white;
+          font-size: 14px;
+          font-weight: 700;
+          line-height: 1.4;
+          overflow-wrap: anywhere;
+        }
+
+        .dtfSection {
+          margin-top: 35px;
+        }
+
+        .dtfSectionTitle {
+          font-size: 13px;
+          letter-spacing: 3px;
+          margin: 0 0 15px;
+        }
+
+        .dtfApplicationsTitle {
+          color: #42c9ff;
+        }
+
+        .dtfFeaturesTitle {
+          color: #ed3ba9;
+        }
+
+        .dtfItemGrid {
+          display: grid;
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+          gap: 9px;
+        }
+
+        .dtfItem {
+          min-width: 0;
+          padding: 11px 13px;
+          border-radius: 7px;
+          background: rgba(255,255,255,0.035);
+          color: #d9e1ec;
+          font-size: 12px;
+          line-height: 1.45;
+        }
+
+        .dtfQuoteWrap {
+          margin-top: 35px;
+        }
+
+        .dtfQuote {
+          display: block;
+          width: 100%;
+          text-align: center;
+          padding: 17px;
+          border-radius: 9px;
+          background:
+            linear-gradient(
+              90deg,
+              #42c9ff,
+              #7765ff,
+              #ed3ba9
+            );
+          color: white;
+          text-decoration: none;
+          font-weight: 900;
+          font-size: 14px;
+          letter-spacing: 1px;
+        }
+
+        .dtfBottomCta {
+          width: calc(100% - 60px);
+          max-width: 1200px;
+          margin: 0 auto 100px;
+          padding: 80px 30px;
+          text-align: center;
+          border-radius: 25px;
+          background:
+            linear-gradient(
+              120deg,
+              rgba(20,48,75,0.8),
+              rgba(62,12,57,0.75)
+            );
+          border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .dtfCtaEyebrow {
+          color: #42c9ff;
+          letter-spacing: 5px;
+          font-size: 12px;
+          font-weight: 900;
+          margin-bottom: 20px;
+        }
+
+        .dtfCtaTitle {
+          font-size: 50px;
+          margin: 0 0 20px;
+          font-weight: 900;
+        }
+
+        .dtfCtaText {
+          color: #9caabd;
+          font-size: 17px;
+          margin: 0 0 30px;
+        }
+
+        .dtfCtaButton {
+          display: inline-block;
+          padding: 17px 35px;
+          border-radius: 9px;
+          background:
+            linear-gradient(
+              90deg,
+              #42c9ff,
+              #7765ff,
+              #ed3ba9
+            );
+          color: white;
+          text-decoration: none;
+          font-weight: 900;
+        }
+
+        /* TABLET */
+        @media (max-width: 900px) {
+          .dtfMachineGrid {
+            grid-template-columns: 1fr;
+          }
+
+          .dtfMachines {
+            padding-left: 20px;
+            padding-right: 20px;
+          }
+        }
+
+        /* MOBILE */
+        @media (max-width: 600px) {
+          .dtfHeader {
+            min-height: 74px;
+            height: auto;
+            padding: 16px 18px;
+            gap: 12px;
+          }
+
+          .dtfBack {
+            font-size: 13px;
+          }
+
+          .dtfBrand {
+            font-size: 18px;
+          }
+
+          .dtfHero {
+            padding: 55px 18px 45px;
+          }
+
+          .dtfEyebrow {
+            font-size: 10px;
+            letter-spacing: 4px;
+            line-height: 1.7;
+            margin-bottom: 16px;
+          }
+
+          .dtfHeroTitle {
+            font-size: clamp(42px, 13vw, 62px);
+            letter-spacing: -2.5px;
+          }
+
+          .dtfHeroText {
+            margin-top: 22px;
+            font-size: 15px;
+            line-height: 1.7;
+          }
+
+          .dtfMachines {
+            width: 100%;
+            padding: 0 14px 60px;
+          }
+
+          .dtfMachineGrid {
+            width: 100%;
+            display: grid;
+            grid-template-columns: minmax(0, 1fr);
+            gap: 22px;
+          }
+
+          .dtfMachineCard {
+            width: 100%;
+            max-width: 100%;
+            border-radius: 18px;
+          }
+
+          .dtfMachineImage {
+            height: 255px;
+            padding: 18px 14px;
+          }
+
+          .dtfMachineImage img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+          }
+
+          .dtfMachineContent {
+            padding: 24px 18px 22px;
+          }
+
+          .dtfCategory {
+            font-size: 9px;
+            letter-spacing: 2.5px;
+            line-height: 1.5;
+            margin-bottom: 10px;
+          }
+
+          .dtfMachineName {
+            font-size: 29px;
+            line-height: 1.05;
+            letter-spacing: -1px;
+            margin-bottom: 15px;
+          }
+
+          .dtfDescription {
+            font-size: 14px;
+            line-height: 1.65;
+          }
+
+          .dtfSpecs {
+            grid-template-columns: minmax(0, 1fr);
+            gap: 9px;
+            margin-top: 22px;
+          }
+
+          .dtfSpec {
+            padding: 14px;
+          }
+
+          .dtfSpecLabel {
+            font-size: 9px;
+            letter-spacing: 1.7px;
+          }
+
+          .dtfSpecValue {
+            font-size: 13px;
+          }
+
+          .dtfSection {
+            margin-top: 27px;
+          }
+
+          .dtfSectionTitle {
+            font-size: 11px;
+            letter-spacing: 2.5px;
+          }
+
+          .dtfItemGrid {
+            grid-template-columns: minmax(0, 1fr);
+            gap: 7px;
+          }
+
+          .dtfItem {
+            font-size: 12px;
+            padding: 10px 12px;
+          }
+
+          .dtfQuoteWrap {
+            margin-top: 27px;
+          }
+
+          .dtfQuote {
+            padding: 15px;
+            font-size: 13px;
+          }
+
+          .dtfBottomCta {
+            width: calc(100% - 28px);
+            margin-bottom: 55px;
+            padding: 50px 20px;
+            border-radius: 20px;
+          }
+
+          .dtfCtaEyebrow {
+            font-size: 9px;
+            letter-spacing: 3px;
+          }
+
+          .dtfCtaTitle {
+            font-size: 34px;
+            line-height: 1.05;
+          }
+
+          .dtfCtaText {
+            font-size: 14px;
+            line-height: 1.6;
+          }
+
+          .dtfCtaButton {
+            width: 100%;
+            padding: 15px;
+          }
+        }
+
+        /* VERY SMALL PHONES */
+        @media (max-width: 380px) {
+          .dtfHeader {
+            padding-left: 13px;
+            padding-right: 13px;
+          }
+
+          .dtfBack {
+            font-size: 11px;
+          }
+
+          .dtfBrand {
+            font-size: 16px;
+          }
+
+          .dtfMachineImage {
+            height: 225px;
+          }
+
+          .dtfMachineName {
+            font-size: 26px;
+          }
+        }
+      `}</style>
+
+      <main className="dtfPage">
+        {/* HEADER */}
+        <header className="dtfHeader">
+          <Link href="/#machines" className="dtfBack">
+            ← BACK TO MACHINES
+          </Link>
+
+          <div className="dtfBrand">
+            <span style={{ color: "#35c7ff" }}>NX</span>{" "}
+            <span>NEXIX NX</span>
+          </div>
+        </header>
+
+        {/* HERO */}
+        <section className="dtfHero">
+          <div className="dtfEyebrow">
+            DIGITAL TEXTILE TECHNOLOGY
+          </div>
+
+          <h1 className="dtfHeroTitle">
+            Direct-to-Fabric
+            <br />
+            <span className="dtfGradient">Printers</span>
+          </h1>
+
+          <p className="dtfHeroText">
+            Advanced direct-to-fabric printing technology engineered for
+            high-quality textile production, reliable operation and industrial
+            productivity.
+          </p>
+        </section>
+
+        {/* MACHINES */}
+        <section className="dtfMachines">
+          <div className="dtfMachineGrid">
+            {machines.map((machine) => (
+              <article
+                key={machine.name}
+                className="dtfMachineCard"
               >
-                <img
-                  src={machine.image}
-                  alt={machine.name}
-                  style={{
-                    width: "100%",
-                    height: "100%",
-                    objectFit: "contain",
-                  }}
-                />
-              </div>
+                {/* IMAGE */}
+                <div className="dtfMachineImage">
+                  <img
+                    src={machine.image}
+                    alt={machine.name}
+                  />
+                </div>
 
-              {/* CONTENT */}
-              <div style={{ padding: "35px" }}>
-                <div
-                  style={{
-                    color:
-                      machine.name.includes("32")
+                {/* CONTENT */}
+                <div className="dtfMachineContent">
+                  <div
+                    className="dtfCategory"
+                    style={{
+                      color: machine.name.includes("32")
                         ? "#ed3ba9"
                         : "#42c9ff",
-                    fontSize: "12px",
-                    fontWeight: 900,
-                    letterSpacing: "4px",
-                    marginBottom: "15px",
-                  }}
-                >
-                  {machine.category}
-                </div>
+                    }}
+                  >
+                    {machine.category}
+                  </div>
 
-                <h2
-                  style={{
-                    fontSize: "38px",
-                    margin: "0 0 18px",
-                    fontWeight: 900,
-                    letterSpacing: "-1px",
-                  }}
-                >
-                  {machine.name}
-                </h2>
+                  <h2 className="dtfMachineName">
+                    {machine.name}
+                  </h2>
 
-                <p
-                  style={{
-                    color: "#9caabd",
-                    lineHeight: 1.7,
-                    fontSize: "16px",
-                    minHeight: "82px",
-                  }}
-                >
-                  {machine.description}
-                </p>
+                  <p className="dtfDescription">
+                    {machine.description}
+                  </p>
 
-                {/* SPECS */}
-                <div
-                  style={{
-                    display: "grid",
-                    gridTemplateColumns: "1fr 1fr",
-                    gap: "12px",
-                    marginTop: "30px",
-                  }}
-                >
-                  {machine.specs.map(([label, value]) => (
-                    <div
-                      key={label}
-                      style={{
-                        padding: "18px",
-                        borderRadius: "10px",
-                        background: "rgba(255,255,255,0.035)",
-                        border: "1px solid rgba(255,255,255,0.07)",
-                      }}
-                    >
+                  {/* SPECS */}
+                  <div className="dtfSpecs">
+                    {machine.specs.map(([label, value]) => (
                       <div
-                        style={{
-                          color: "#6f7d91",
-                          fontSize: "10px",
-                          fontWeight: 900,
-                          letterSpacing: "2px",
-                          marginBottom: "8px",
-                        }}
+                        key={label}
+                        className="dtfSpec"
                       >
-                        {label}
-                      </div>
+                        <div className="dtfSpecLabel">
+                          {label}
+                        </div>
 
-                      <div
-                        style={{
-                          color: "white",
-                          fontSize: "14px",
-                          fontWeight: 700,
-                          lineHeight: 1.4,
-                        }}
-                      >
-                        {value}
+                        <div className="dtfSpecValue">
+                          {value}
+                        </div>
                       </div>
+                    ))}
+                  </div>
+
+                  {/* APPLICATIONS */}
+                  <div className="dtfSection">
+                    <h3 className="dtfSectionTitle dtfApplicationsTitle">
+                      APPLICATIONS
+                    </h3>
+
+                    <div className="dtfItemGrid">
+                      {machine.applications.map((item) => (
+                        <div
+                          key={item}
+                          className="dtfItem"
+                        >
+                          ✓ {item}
+                        </div>
+                      ))}
                     </div>
-                  ))}
-                </div>
+                  </div>
 
-                {/* APPLICATIONS */}
-                <div style={{ marginTop: "35px" }}>
-                  <h3
-                    style={{
-                      fontSize: "13px",
-                      letterSpacing: "3px",
-                      color: "#42c9ff",
-                      marginBottom: "15px",
-                    }}
-                  >
-                    APPLICATIONS
-                  </h3>
+                  {/* FEATURES */}
+                  <div className="dtfSection">
+                    <h3 className="dtfSectionTitle dtfFeaturesTitle">
+                      KEY FEATURES
+                    </h3>
 
-                  <div
-                    style={{
-                      display: "grid",
-                      gridTemplateColumns: "1fr 1fr",
-                      gap: "9px",
-                    }}
-                  >
-                    {machine.applications.map((item) => (
-                      <div
-                        key={item}
-                        style={{
-                          padding: "11px 13px",
-                          borderRadius: "7px",
-                          background: "rgba(255,255,255,0.035)",
-                          color: "#d9e1ec",
-                          fontSize: "12px",
-                        }}
-                      >
-                        ✓ {item}
-                      </div>
-                    ))}
+                    <div className="dtfItemGrid">
+                      {machine.features.map((item) => (
+                        <div
+                          key={item}
+                          className="dtfItem"
+                        >
+                          ✦ {item}
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* BUTTON */}
+                  <div className="dtfQuoteWrap">
+                    <Link
+                      href={`/quote?machine=${encodeURIComponent(
+                        machine.name
+                      )}`}
+                      className="dtfQuote"
+                    >
+                      GET A QUOTE →
+                    </Link>
                   </div>
                 </div>
+              </article>
+            ))}
+          </div>
+        </section>
 
-                {/* FEATURES */}
-                <div style={{ marginTop: "35px" }}>
-                  <h3
-                    style={{
-                      fontSize: "13px",
-                      letterSpacing: "3px",
-                      color: "#ed3ba9",
-                      marginBottom: "15px",
-                    }}
-                  >
-                    KEY FEATURES
-                  </h3>
+        {/* BOTTOM CTA */}
+        <section className="dtfBottomCta">
+          <div className="dtfCtaEyebrow">
+            READY TO PRODUCE?
+          </div>
 
-                  <div
-                    style={{
-                      display: "grid",
-                      gridTemplateColumns: "1fr 1fr",
-                      gap: "9px",
-                    }}
-                  >
-                    {machine.features.map((item) => (
-                      <div
-                        key={item}
-                        style={{
-                          padding: "11px 13px",
-                          borderRadius: "7px",
-                          background: "rgba(255,255,255,0.035)",
-                          color: "#d9e1ec",
-                          fontSize: "12px",
-                        }}
-                      >
-                        ✦ {item}
-                      </div>
-                    ))}
-                  </div>
-                </div>
+          <h2 className="dtfCtaTitle">
+            Talk to NEXIX NX.
+          </h2>
 
-                {/* BUTTON */}
-                <div style={{ marginTop: "35px" }}>
-                  <Link
-                    href={`/quote?machine=${encodeURIComponent(
-                      machine.name
-                    )}`}
-                    style={{
-                      display: "block",
-                      textAlign: "center",
-                      padding: "17px",
-                      borderRadius: "9px",
-                      background:
-                        "linear-gradient(90deg,#42c9ff,#7765ff,#ed3ba9)",
-                      color: "white",
-                      textDecoration: "none",
-                      fontWeight: 900,
-                      fontSize: "14px",
-                      letterSpacing: "1px",
-                    }}
-                  >
-                    GET A QUOTE →
-                  </Link>
-                </div>
-              </div>
-            </article>
-          ))}
-        </div>
-      </section>
+          <p className="dtfCtaText">
+            Get machine specifications, configuration options and pricing
+            information from our team.
+          </p>
 
-      {/* BOTTOM CTA */}
-      <section
-        style={{
-          maxWidth: "1200px",
-          margin: "0 auto 100px",
-          padding: "80px 30px",
-          textAlign: "center",
-          borderRadius: "25px",
-          background:
-            "linear-gradient(120deg, rgba(20,48,75,0.8), rgba(62,12,57,0.75))",
-          border: "1px solid rgba(255,255,255,0.1)",
-        }}
-      >
-        <div
-          style={{
-            color: "#42c9ff",
-            letterSpacing: "5px",
-            fontSize: "12px",
-            fontWeight: 900,
-            marginBottom: "20px",
-          }}
-        >
-          READY TO PRODUCE?
-        </div>
-
-        <h2
-          style={{
-            fontSize: "50px",
-            margin: "0 0 20px",
-            fontWeight: 900,
-          }}
-        >
-          Talk to NEXIX NX.
-        </h2>
-
-        <p
-          style={{
-            color: "#9caabd",
-            fontSize: "17px",
-            marginBottom: "30px",
-          }}
-        >
-          Get machine specifications, configuration options and pricing
-          information from our team.
-        </p>
-
-        <Link
-          href="/quote"
-          style={{
-            display: "inline-block",
-            padding: "17px 35px",
-            borderRadius: "9px",
-            background:
-              "linear-gradient(90deg,#42c9ff,#7765ff,#ed3ba9)",
-            color: "white",
-            textDecoration: "none",
-            fontWeight: 900,
-          }}
-        >
-          GET A QUOTE →
-        </Link>
-      </section>
-    </main>
+          <Link
+            href="/quote"
+            className="dtfCtaButton"
+          >
+            GET A QUOTE →
+          </Link>
+        </section>
+      </main>
+    </>
   );
 }
