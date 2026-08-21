@@ -6485,7 +6485,33 @@ body {
 .contactPhone {
   color: #35c9ff;
 }
+/* =========================
+   CONTACT DETAILS FIX
+   ========================= */
 
+.contactDetails {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.contactDetails h3 {
+  margin-bottom: 28px;
+}
+
+.contactDetails .contactItem {
+  margin-bottom: 24px;
+}
+
+.contactDetails .contactLabel {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.contactDetails .contactValue,
+.contactDetails .contactLink {
+  display: block;
+}
 @media (max-width: 768px) {
   .contactDetails {
     width: 100%;
