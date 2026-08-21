@@ -1787,35 +1787,34 @@ export default function Home() {
 
     </div>
 
+ {/* MACHINES */}
+<div className="footerColumn">
+  <h3>MACHINES</h3>
 
-    {/* MACHINES */}
-    <div className="footerColumn">
+  <a href="/machines/direct-to-fabric">
+    Direct-to-Fabric
+  </a>
 
-      <h3>MACHINES</h3>
+  <a href="/machines/sublimation">
+    Sublimation
+  </a>
 
-      <a href="/machines/direct-to-fabric">
-        Direct-to-Fabric
-      </a>
+  <a href="/machines/uv">
+    UV Printing
+  </a>
 
-      <a href="/machines/sublimation">
-        Sublimation
-      </a>
+  <a href="/inks/textile">
+    Textile Inks
+  </a>
+</div>
 
-      <a href="/machines/uv">
-        UV Printing
-      </a>
-
-      <a href="/inks/textile">
-        Textile Inks
-      </a>
-
-    </div>
-
-
+{/* CONTACT DETAILS */}
+<div className="footerColumn contactDetails">
   <h3>CONTACT DETAILS</h3>
 
   <div className="contactItem">
     <span className="contactLabel">EMAIL</span>
+
     <a
       className="contactLink"
       href="mailto:nikeshvermaa@gmail.com"
@@ -1826,6 +1825,7 @@ export default function Home() {
 
   <div className="contactItem">
     <span className="contactLabel">PHONE</span>
+
     <a
       className="contactLink contactPhone"
       href="tel:+916354671731"
@@ -1836,12 +1836,12 @@ export default function Home() {
 
   <div className="contactItem">
     <span className="contactLabel">LOCATION</span>
-    <span className="contactValue">
+
+    <div className="contactValue">
       Platinum Business Park, Surat
-    </span>
+    </div>
   </div>
 </div>
-
 
   {/* SOCIAL + BOTTOM */}
   <div className="footerBottom">
@@ -1874,8 +1874,8 @@ export default function Home() {
       Digital Printing Technology • Global Service Network
     </span>
 
-  </div>
-
+ </div>
+</div>
 </footer>
 </main>
 );
