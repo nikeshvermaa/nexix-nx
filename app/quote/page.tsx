@@ -1,9 +1,9 @@
 "use client";
 
 import { useSearchParams } from "next/navigation";
-import { useState } from "react";
+import { Suspense, useState } from "react";
 
-export default function QuotePage() {
+function QuoteForm() {
   const searchParams = useSearchParams();
   const machineFromUrl = searchParams.get("machine") || "";
 
@@ -291,5 +291,19 @@ export default function QuotePage() {
         </form>
       </div>
     </main>
+    );
+}
+
+export default function QuotePage() {
+  return (
+    <Suspense
+      fallback={
+        <main className="min-h-screen bg-black text-white flex items-center justify-center">
+          <p className="text-cyan-400">Loading quote form...</p>
+        </main>
+      }
+    >
+      <QuoteForm />
+    </Suspense>
   );
 }
