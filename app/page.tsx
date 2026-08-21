@@ -1236,6 +1236,27 @@ export default function Home() {
           </div>
         </a>
 
+        <input
+  type="checkbox"
+  id="mobileMenuToggle"
+  className="mobileMenuToggle"
+/>
+
+<label htmlFor="mobileMenuToggle" className="mobileMenuButton">
+  <span></span>
+  <span></span>
+  <span></span>
+</label>
+
+<div className="mobileMenu">
+  <Link href="#home">HOME</Link>
+  <Link href="#machines">MACHINES</Link>
+  <Link href="/inks">INKS</Link>
+  <Link href="/support">SUPPORT</Link>
+  <Link href="/about">ABOUT US</Link>
+  <Link href="/contact">CONTACT</Link>
+  <Link href="/careers">CAREERS</Link>
+</div>
         <div className="navLinks">
           <a href="#">HOME</a>
           <a href="#machines">MACHINES</a>
