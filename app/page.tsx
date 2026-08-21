@@ -1812,35 +1812,35 @@ export default function Home() {
     </div>
 
 
-    {/* CONTACT */}
-    <div className="footerColumn footerContact">
+  <h3>CONTACT DETAILS</h3>
 
-      <h3>CONTACT DETAILS</h3>
-
-      <div className="contactItem">
-        <span>EMAIL</span>
-        <a href="mailto:info@nexixnx.com">
-          info@nexixnx.com
-        </a>
-      </div>
-
-      <div className="contactItem">
-        <span>PHONE</span>
-        <a href="tel:+91XXXXXXXXXX">
-          +91 XXXXX XXXXX
-        </a>
-      </div>
-
-      <div className="contactItem">
-        <span>LOCATION</span>
-        <p>
-          Surat, Gujarat, India
-        </p>
-      </div>
-
-    </div>
-
+  <div className="contactItem">
+    <span className="contactLabel">EMAIL</span>
+    <a
+      className="contactLink"
+      href="mailto:nikeshvermaa@gmail.com"
+    >
+      nikeshvermaa@gmail.com
+    </a>
   </div>
+
+  <div className="contactItem">
+    <span className="contactLabel">PHONE</span>
+    <a
+      className="contactLink contactPhone"
+      href="tel:+916354671731"
+    >
+      +91 6354671731
+    </a>
+  </div>
+
+  <div className="contactItem">
+    <span className="contactLabel">LOCATION</span>
+    <span className="contactValue">
+      Platinum Business Park, Surat
+    </span>
+  </div>
+</div>
 
 
   {/* SOCIAL + BOTTOM */}

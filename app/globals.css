@@ -6442,3 +6442,65 @@ body {
     transform: translateY(-7px) rotate(-45deg);
   }
 }
+/* CONTACT DETAILS */
+
+.contactDetails {
+  min-width: 0;
+}
+
+.contactDetails h3 {
+  margin: 0 0 28px;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 900;
+  letter-spacing: 3px;
+}
+
+.contactItem {
+  margin-bottom: 24px;
+}
+
+.contactLabel {
+  display: block;
+  margin-bottom: 8px;
+  color: #74839a;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+
+.contactLink,
+.contactValue {
+  color: #f2f5fa;
+  font-size: 15px;
+  line-height: 1.5;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+}
+
+.contactLink:hover {
+  color: #35c9ff;
+}
+
+.contactPhone {
+  color: #35c9ff;
+}
+
+@media (max-width: 768px) {
+  .contactDetails {
+    width: 100%;
+  }
+
+  .contactDetails h3 {
+    margin-bottom: 22px;
+  }
+
+  .contactItem {
+    margin-bottom: 20px;
+  }
+
+  .contactLink,
+  .contactValue {
+    font-size: 14px;
+  }
+}
