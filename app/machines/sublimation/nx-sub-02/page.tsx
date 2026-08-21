@@ -487,6 +487,150 @@ export default function NXSub02Page() {
           </a>
         </section>
       </section>
+
+
+      {/* MOBILE RESPONSIVE */}
+      <style>{`
+        @media (max-width: 768px) {
+          * { box-sizing: border-box; }
+          main { width: 100%; overflow-x: hidden; }
+
+          /* Header */
+          header {
+            height: 68px !important;
+            padding: 0 16px !important;
+            gap: 10px !important;
+          }
+          header a {
+            font-size: 10px !important;
+            white-space: nowrap !important;
+          }
+          header > div {
+            font-size: 16px !important;
+            white-space: nowrap !important;
+          }
+
+          /* Hero */
+          main > section:nth-of-type(1) {
+            padding: 48px 18px 40px !important;
+          }
+          main > section:nth-of-type(1) h1 {
+            font-size: 45px !important;
+            line-height: 1 !important;
+            letter-spacing: -2px !important;
+          }
+          main > section:nth-of-type(1) p {
+            font-size: 15px !important;
+            line-height: 1.7 !important;
+          }
+
+          /* Main machine content: image ABOVE details */
+          main > section:nth-of-type(2) {
+            padding: 0 18px 60px !important;
+          }
+          main > section:nth-of-type(2) > div:first-child {
+            grid-template-columns: 1fr !important;
+            gap: 18px !important;
+          }
+          main > section:nth-of-type(2) > div:first-child > div:first-child {
+            min-height: 270px !important;
+            height: auto !important;
+            padding: 18px !important;
+            border-radius: 18px !important;
+            order: 1 !important;
+          }
+          main > section:nth-of-type(2) > div:first-child > div:first-child img {
+            width: 100% !important;
+            max-width: 100% !important;
+            max-height: 255px !important;
+            object-fit: contain !important;
+          }
+          main > section:nth-of-type(2) > div:first-child > div:last-child {
+            padding: 23px 18px !important;
+            border-radius: 18px !important;
+            order: 2 !important;
+          }
+          main > section:nth-of-type(2) > div:first-child > div:last-child h2 {
+            font-size: 29px !important;
+            line-height: 1.15 !important;
+          }
+          main > section:nth-of-type(2) > div:first-child > div:last-child p {
+            font-size: 14px !important;
+            line-height: 1.7 !important;
+          }
+
+          /* Technical specifications: 1 column */
+          main > section:nth-of-type(2) > section:nth-of-type(1) {
+            margin-top: 55px !important;
+          }
+          main > section:nth-of-type(2) > section:nth-of-type(1) h2 {
+            font-size: 33px !important;
+            line-height: 1.1 !important;
+          }
+          main > section:nth-of-type(2) > section:nth-of-type(1) > div:last-child {
+            grid-template-columns: 1fr !important;
+            gap: 9px !important;
+          }
+          main > section:nth-of-type(2) > section:nth-of-type(1) > div:last-child > div {
+            padding: 18px !important;
+          }
+
+          /* Performance: stacked */
+          main > section:nth-of-type(2) > section:nth-of-type(2) {
+            margin-top: 50px !important;
+            padding: 30px 18px !important;
+            border-radius: 18px !important;
+          }
+          main > section:nth-of-type(2) > section:nth-of-type(2) > div {
+            grid-template-columns: 1fr !important;
+            gap: 28px !important;
+          }
+          main > section:nth-of-type(2) > section:nth-of-type(2) > div > div > div:first-child {
+            font-size: 38px !important;
+          }
+
+          /* Applications: 1 column */
+          main > section:nth-of-type(2) > section:nth-of-type(3) {
+            margin-top: 55px !important;
+          }
+          main > section:nth-of-type(2) > section:nth-of-type(3) h2 {
+            font-size: 32px !important;
+            line-height: 1.1 !important;
+          }
+          main > section:nth-of-type(2) > section:nth-of-type(3) > div:last-child {
+            grid-template-columns: 1fr !important;
+            gap: 10px !important;
+          }
+
+          /* CTA */
+          main > section:nth-of-type(2) > section:nth-of-type(4) {
+            margin-top: 55px !important;
+            padding: 45px 18px !important;
+            border-radius: 18px !important;
+          }
+          main > section:nth-of-type(2) > section:nth-of-type(4) h2 {
+            font-size: 35px !important;
+            line-height: 1.08 !important;
+          }
+          main > section:nth-of-type(2) > section:nth-of-type(4) p {
+            font-size: 14px !important;
+            line-height: 1.6 !important;
+          }
+          main > section:nth-of-type(2) > section:nth-of-type(4) a {
+            display: block !important;
+            width: 100% !important;
+            box-sizing: border-box !important;
+          }
+        }
+
+        @media (max-width: 390px) {
+          header { padding: 0 13px !important; }
+          header a { font-size: 9px !important; }
+          header > div { font-size: 14px !important; }
+          main > section:nth-of-type(1) h1 { font-size: 39px !important; }
+          main > section:nth-of-type(2) > div:first-child > div:first-child { min-height: 235px !important; }
+        }
+      `}</style>
     </main>
   );
 }

@@ -635,6 +635,192 @@ export default function NXSub01Page() {
           </a>
         </div>
       </section>
+
+
+      {/* MOBILE RESPONSIVE */}
+      <style>{`
+        @media (max-width: 768px) {
+          * { box-sizing: border-box; }
+          main { width: 100%; overflow-x: hidden; }
+
+          /* Header */
+          header {
+            height: 68px !important;
+            padding: 0 16px !important;
+            gap: 10px !important;
+          }
+          header a {
+            font-size: 10px !important;
+            letter-spacing: 0 !important;
+            white-space: nowrap !important;
+          }
+          header > div {
+            font-size: 16px !important;
+            white-space: nowrap !important;
+          }
+
+          /* Hero */
+          main > section:nth-of-type(1) {
+            width: 100% !important;
+            padding: 52px 18px 45px !important;
+          }
+          main > section:nth-of-type(1) > div {
+            grid-template-columns: 1fr !important;
+            gap: 30px !important;
+          }
+          main > section:nth-of-type(1) h1 {
+            font-size: 48px !important;
+            line-height: 0.98 !important;
+            letter-spacing: -2px !important;
+          }
+          main > section:nth-of-type(1) p {
+            font-size: 15px !important;
+            line-height: 1.7 !important;
+            margin-top: 20px !important;
+          }
+          main > section:nth-of-type(1) > div > div:first-child > div:last-child {
+            width: 100% !important;
+          }
+          main > section:nth-of-type(1) > div > div:first-child > div:last-child a {
+            flex: 1 1 100% !important;
+            width: 100% !important;
+            text-align: center !important;
+          }
+
+          /* Hero machine image */
+          main > section:nth-of-type(1) > div > div:last-child {
+            min-height: 270px !important;
+            height: auto !important;
+            padding: 18px !important;
+            border-radius: 18px !important;
+          }
+          main > section:nth-of-type(1) > div > div:last-child img {
+            width: 100% !important;
+            max-width: 100% !important;
+            max-height: 260px !important;
+            object-fit: contain !important;
+          }
+
+          /* Quick specs: 2 x 2 */
+          main > section:nth-of-type(2) {
+            padding: 0 18px 60px !important;
+          }
+          main > section:nth-of-type(2) > div {
+            grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+            gap: 10px !important;
+          }
+          main > section:nth-of-type(2) > div > div {
+            min-width: 0 !important;
+            padding: 20px 14px !important;
+            border-radius: 12px !important;
+          }
+          main > section:nth-of-type(2) > div > div > div:first-child {
+            font-size: 21px !important;
+            line-height: 1.15 !important;
+            overflow-wrap: anywhere !important;
+          }
+          main > section:nth-of-type(2) > div > div > div:last-child {
+            font-size: 9px !important;
+            line-height: 1.35 !important;
+          }
+
+          /* Intro */
+          main > section:nth-of-type(3) {
+            padding: 45px 18px 70px !important;
+          }
+          main > section:nth-of-type(3) h2 {
+            font-size: 36px !important;
+            line-height: 1.08 !important;
+            letter-spacing: -1.5px !important;
+          }
+          main > section:nth-of-type(3) p {
+            font-size: 15px !important;
+            line-height: 1.75 !important;
+          }
+
+          /* Features: 1 column */
+          main > section:nth-of-type(4) {
+            padding: 0 18px 70px !important;
+          }
+          main > section:nth-of-type(4) h2 {
+            font-size: 34px !important;
+            line-height: 1.1 !important;
+            margin-bottom: 28px !important;
+          }
+          main > section:nth-of-type(4) > div:last-child {
+            grid-template-columns: 1fr !important;
+            gap: 12px !important;
+          }
+          main > section:nth-of-type(4) > div:last-child > div {
+            min-height: auto !important;
+            padding: 23px !important;
+          }
+
+          /* Technical specifications */
+          main > section:nth-of-type(5) {
+            padding: 0 18px 70px !important;
+          }
+          main > section:nth-of-type(5) h2 {
+            font-size: 34px !important;
+            line-height: 1.1 !important;
+          }
+          main > section:nth-of-type(5) > div:last-child > div {
+            grid-template-columns: 1fr !important;
+            gap: 7px !important;
+            padding: 17px 18px !important;
+          }
+          main > section:nth-of-type(5) > div:last-child > div span {
+            display: block !important;
+          }
+          main > section:nth-of-type(5) > div:last-child > div span:first-child {
+            margin-bottom: 5px !important;
+          }
+
+          /* Applications: 1 column */
+          main > section:nth-of-type(6) {
+            padding: 0 18px 70px !important;
+          }
+          main > section:nth-of-type(6) h2 {
+            font-size: 34px !important;
+            line-height: 1.1 !important;
+          }
+          main > section:nth-of-type(6) > div:last-child {
+            grid-template-columns: 1fr !important;
+            gap: 10px !important;
+          }
+
+          /* CTA */
+          main > section:nth-of-type(7) {
+            padding: 10px 18px 70px !important;
+          }
+          main > section:nth-of-type(7) > div {
+            padding: 40px 20px !important;
+            border-radius: 18px !important;
+          }
+          main > section:nth-of-type(7) h2 {
+            font-size: 36px !important;
+            line-height: 1.08 !important;
+          }
+          main > section:nth-of-type(7) p {
+            font-size: 14px !important;
+            line-height: 1.65 !important;
+          }
+          main > section:nth-of-type(7) a {
+            display: block !important;
+            width: 100% !important;
+            box-sizing: border-box !important;
+          }
+        }
+
+        @media (max-width: 390px) {
+          header { padding: 0 13px !important; }
+          header a { font-size: 9px !important; }
+          header > div { font-size: 14px !important; }
+          main > section:nth-of-type(1) h1 { font-size: 42px !important; }
+          main > section:nth-of-type(1) > div > div:last-child { min-height: 235px !important; }
+          main > section:nth-of-type(2) > div > div > div:first-child { font-size: 18px !important; }
+        }
+      `}</style>
     </main>
   );
 }
