@@ -37,7 +37,7 @@ export default function ContactPage() {
           <div className="contactHeroButtons">
 
             <a
-              href="tel:+916354671731"
+              href="tel:+914563545121"
               className="contactPrimaryBtn"
             >
               CALL US
@@ -213,7 +213,7 @@ export default function ContactPage() {
 
             <div>
               <small>PHONE</small>
-              <a href="tel:+916354671731">
+              <a href="tel:+914563545121">
                 +91 63546 71731
               </a>
             </div>
@@ -522,10 +522,10 @@ export default function ContactPage() {
         <div className="finalCTAActions">
 
           <a
-            href="tel:+916354671731"
+            href="tel:+914563545121"
             className="contactPrimaryBtn"
           >
-            CALL +91 63546 71731
+            CALL +91 4563545121
           </a>
 
           <Link

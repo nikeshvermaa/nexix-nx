@@ -1828,7 +1828,7 @@ export default function Home() {
 
     <a
       className="contactLink contactPhone"
-      href="tel:+916354671731"
+      href="tel:+914512546512"
     >
       +91 6354671731
     </a>
