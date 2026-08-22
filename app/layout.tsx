@@ -13,36 +13,49 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "NEXIX NX | Digital Printing Machines & Inks",
+  metadataBase: new URL("https://nexix-nx.com"),
+
+  title: {
+    default: "NEXIX NX | Digital Printing Machines & Inks",
+    template: "%s | NEXIX NX",
+  },
+
   description:
-    "NEXIX NX provides advanced digital printing machines, sublimation printers, direct-to-fabric printers and premium digital printing inks with reliable technical support.",
+    "NEXIX NX provides digital printing machines, sublimation printers, direct-to-fabric printing machines and premium digital printing inks with reliable technical support.",
+
   keywords: [
     "NEXIX NX",
     "digital printing machines",
     "digital textile printing machines",
     "sublimation printing machines",
     "direct to fabric printing machines",
-    "digital printing inks",
     "textile printing machines",
+    "digital printing inks",
   ],
+
   authors: [{ name: "NEXIX NX" }],
   creator: "NEXIX NX",
   publisher: "NEXIX NX",
-
-  metadataBase: new URL("https://nexix-nx.com"),
 
   alternates: {
     canonical: "/",
   },
 
   openGraph: {
+    type: "website",
+    locale: "en_IN",
+    url: "https://nexix-nx.com/",
+    siteName: "NEXIX NX",
     title: "NEXIX NX | Digital Printing Machines & Inks",
     description:
-      "Explore advanced digital printing machines and premium inks from NEXIX NX.",
-    url: "https://nexix-nx.com",
-    siteName: "NEXIX NX",
-    locale: "en_IN",
-    type: "website",
+      "Explore digital printing machines, textile printing solutions and premium digital printing inks from NEXIX NX.",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "NEXIX NX | Digital Printing Machines & Inks",
+    description:
+      "Digital printing machines, textile printing solutions and premium digital printing inks from NEXIX NX.",
   },
 
   robots: {
@@ -51,6 +64,9 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
     },
   },
 };
