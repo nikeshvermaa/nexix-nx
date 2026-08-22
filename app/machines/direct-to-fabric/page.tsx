@@ -1,4 +1,37 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Direct-to-Fabric Printing Machines | NEXIX NX",
+  description:
+    "Explore NEXIX NX direct-to-fabric printing machines for high-quality textile production, including the NX-DTF 08 and NX-DTF 32 industrial printers.",
+  keywords: [
+    "NEXIX NX direct-to-fabric printers",
+    "direct-to-fabric printing machines",
+    "digital textile printing machines",
+    "direct fabric printing machine",
+    "industrial textile printer",
+    "fabric printing machine",
+    "NEXIX NX-DTF 08",
+    "NEXIX NX-DTF 32",
+  ],
+  alternates: {
+    canonical: "https://nexix-nx.com/machines/direct-to-fabric",
+  },
+  openGraph: {
+    title: "Direct-to-Fabric Printing Machines | NEXIX NX",
+    description:
+      "Advanced NEXIX NX direct-to-fabric printing machines engineered for high-quality textile production and industrial productivity.",
+    url: "https://nexix-nx.com/machines/direct-to-fabric",
+    siteName: "NEXIX NX",
+    locale: "en_IN",
+    type: "website",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+};
 
 export default function DirectToFabricPage() {
   const machines = [
