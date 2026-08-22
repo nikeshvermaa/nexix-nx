@@ -1,4 +1,37 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Sublimation Printing Machines | NEXIX NX",
+  description:
+    "Explore NEXIX NX sublimation printing machines designed for high-performance polyester textile printing, productivity and excellent print output.",
+  keywords: [
+    "NEXIX NX sublimation printers",
+    "sublimation printing machines",
+    "sublimation textile printing machines",
+    "digital sublimation printer",
+    "polyester fabric printing machine",
+    "sublimation printer India",
+    "NEXIX NX-SUB 01",
+    "NEXIX NX-SUB 02",
+  ],
+  alternates: {
+    canonical: "https://nexix-nx.com/machines/sublimation",
+  },
+  openGraph: {
+    title: "Sublimation Printing Machines | NEXIX NX",
+    description:
+      "High-performance NEXIX NX sublimation printing machines engineered for precision, productivity and polyester textile printing.",
+    url: "https://nexix-nx.com/machines/sublimation",
+    siteName: "NEXIX NX",
+    locale: "en_IN",
+    type: "website",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+};
 
 const machines = [
   {
