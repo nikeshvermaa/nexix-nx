@@ -1830,7 +1830,7 @@ export default function Home() {
       className="contactLink contactPhone"
       href="tel:+914512546512"
     >
-      +91 6354671731
+      +91 4563214567
     </a>
   </div>
 
