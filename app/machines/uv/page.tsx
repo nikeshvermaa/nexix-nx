@@ -1,6 +1,5 @@
 "use client";
 import Link from "next/link";
-
 const specifications = [
   ["PRINT WIDTH", "1.8 m – 5.2 m"],
   ["PRINTING SPEED", "100–200 m/hr"],
