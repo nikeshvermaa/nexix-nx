@@ -93,17 +93,91 @@ export default function SublimationPage() {
         </div>
 
         <h1>
-          Sublimation{" "}
-          <span>Printers</span>
-        </h1>
+  Sublimation{" "}
+  <span>Printing Machines</span>
+</h1>
 
-        <p>
-          High-performance digital sublimation printing solutions engineered
-          for precision, productivity and outstanding polyester textile
-          printing.
-        </p>
+       <p>
+  NEXIX NX sublimation printing machines are designed for high-quality
+  digital textile printing on polyester fabrics, delivering reliable
+  production, excellent colour reproduction and consistent print output.
+  Our sublimation printing solutions are suitable for textile, fashion,
+  sportswear, signage and other polyester-based applications.
+</p>
       </section>
+{/* SEO CONTENT */}
+<section
+  style={{
+    maxWidth: "1100px",
+    margin: "0 auto 100px",
+    padding: "0 30px",
+  }}
+>
+  <div
+    style={{
+      color: "#42c9ff",
+      fontSize: "12px",
+      fontWeight: 900,
+      letterSpacing: "4px",
+      marginBottom: "18px",
+    }}
+  >
+    DIGITAL SUBLIMATION PRINTING
+  </div>
 
+  <h2
+    style={{
+      fontSize: "clamp(34px, 5vw, 56px)",
+      lineHeight: 1.05,
+      margin: "0 0 25px",
+      fontWeight: 900,
+    }}
+  >
+    Sublimation Printing Machines
+  </h2>
+
+  <p
+    style={{
+      color: "#9caabd",
+      fontSize: "16px",
+      lineHeight: 1.8,
+      margin: "0 0 20px",
+    }}
+  >
+    NEXIX NX provides sublimation printing machines designed for high-quality
+    digital printing on polyester fabrics and other suitable sublimation
+    media. Our machines are engineered for reliable production, precise
+    colour reproduction and consistent print quality across demanding textile
+    applications.
+  </p>
+
+  <p
+    style={{
+      color: "#9caabd",
+      fontSize: "16px",
+      lineHeight: 1.8,
+      margin: "0 0 20px",
+    }}
+  >
+    Sublimation printing is widely used for fashion fabrics, sportswear,
+    home textiles, promotional products, signage and other polyester-based
+    applications. NEXIX NX offers different machine configurations to support
+    both compact production requirements and higher-volume textile printing.
+  </p>
+
+  <p
+    style={{
+      color: "#9caabd",
+      fontSize: "16px",
+      lineHeight: 1.8,
+      margin: 0,
+    }}
+  >
+    Based in Surat, Gujarat, NEXIX NX supports businesses looking for
+    dependable sublimation printing machines, digital textile printing
+    technology, installation assistance and technical support.
+  </p>
+</section>
       {/* MACHINES */}
       <section className="machineSection">
         <div className="machineGrid">
@@ -121,11 +195,11 @@ export default function SublimationPage() {
 
               {/* MACHINE IMAGE */}
               <div className="machineImageBox">
-                <img
-                  src={machine.image}
-                  alt={machine.name}
-                  className="machineImage"
-                />
+               <img
+  src={machine.image}
+  alt={`${machine.name} sublimation printing machine by NEXIX NX`}
+  className="machineImage"
+/>
               </div>
 
               {/* MACHINE DETAILS */}

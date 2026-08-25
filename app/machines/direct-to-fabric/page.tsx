@@ -659,16 +659,17 @@ export default function DirectToFabricPage() {
           </div>
 
           <h1 className="dtfHeroTitle">
-            Direct-to-Fabric
-            <br />
-            <span className="dtfGradient">Printers</span>
-          </h1>
-
-          <p className="dtfHeroText">
-            Advanced direct-to-fabric printing technology engineered for
-            high-quality textile production, reliable operation and industrial
-            productivity.
-          </p>
+  Direct-to-Fabric
+  <br />
+  <span className="dtfGradient">Printing Machines</span>
+</h1>
+         <p className="dtfHeroText">
+  NEXIX NX direct-to-fabric printing machines are engineered for high-quality
+  digital textile printing, reliable continuous operation and industrial
+  productivity. Our solutions support cotton, viscose, polyester, silk and
+  blended fabrics for fashion, apparel, home textiles and commercial fabric
+  production.
+</p>
         </section>
 
         {/* MACHINES */}
@@ -681,10 +682,10 @@ export default function DirectToFabricPage() {
               >
                 {/* IMAGE */}
                 <div className="dtfMachineImage">
-                  <img
-                    src={machine.image}
-                    alt={machine.name}
-                  />
+                 <img
+  src={machine.image}
+  alt={`${machine.name} direct-to-fabric printing machine by NEXIX NX`}
+/>
                 </div>
 
                 {/* CONTENT */}
@@ -778,7 +779,81 @@ export default function DirectToFabricPage() {
             ))}
           </div>
         </section>
+        {/* SEO CONTENT */}
+        <section
+          style={{
+            maxWidth: "1100px",
+            margin: "0 auto 100px",
+            padding: "0 30px",
+          }}
+        >
+          <div
+            style={{
+              color: "#42c9ff",
+              fontSize: "12px",
+              fontWeight: 900,
+              letterSpacing: "4px",
+              marginBottom: "18px",
+            }}
+          >
+            DIGITAL TEXTILE PRINTING
+          </div>
 
+          <h2
+            style={{
+              fontSize: "clamp(34px, 5vw, 56px)",
+              lineHeight: 1.05,
+              margin: "0 0 25px",
+              fontWeight: 900,
+            }}
+          >
+            Direct-to-Fabric Printing Machines
+          </h2>
+
+          <p
+            style={{
+              color: "#9caabd",
+              fontSize: "16px",
+              lineHeight: 1.8,
+              margin: "0 0 20px",
+            }}
+          >
+            NEXIX NX provides direct-to-fabric printing machines for digital
+            textile production. These industrial textile printers are designed
+            to print directly onto fabrics without transfer paper, helping
+            textile manufacturers and printing businesses produce high-quality
+            fabrics for fashion, apparel, home textiles, upholstery and other
+            applications.
+          </p>
+
+          <p
+            style={{
+              color: "#9caabd",
+              fontSize: "16px",
+              lineHeight: 1.8,
+              margin: "0 0 20px",
+            }}
+          >
+            Our direct-to-fabric printing solutions support a range of fabrics
+            including cotton, viscose, polyester, silk and blended materials.
+            NEXIX NX machines are designed for reliable fabric feeding,
+            controlled tension, continuous production and consistent print
+            quality.
+          </p>
+
+          <p
+            style={{
+              color: "#9caabd",
+              fontSize: "16px",
+              lineHeight: 1.8,
+              margin: 0,
+            }}
+          >
+            Based in Surat, Gujarat, NEXIX NX provides digital textile printing
+            machines, installation assistance and technical support for
+            businesses looking to expand their fabric printing capabilities.
+          </p>
+        </section>
         {/* BOTTOM CTA */}
         <section className="dtfBottomCta">
           <div className="dtfCtaEyebrow">

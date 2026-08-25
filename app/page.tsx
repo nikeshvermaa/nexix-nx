@@ -1331,12 +1331,14 @@ export default function Home() {
           <div className="eyebrow">PRECISE ENGINEERING. PERFECT PRINTS.</div>
 
           <h1>
-            Engineering the
-            <br />
-            Future of
-            <br />
-            <span className="gradientWord">Digital</span> Printing
-          </h1>
+  Engineering the
+  <br />
+  Future of
+  <br />
+  <span className="gradientWord">Digital Printing</span>
+  <br />
+  Machines
+</h1>
 
           <div className="accentLine" />
 
@@ -1345,9 +1347,11 @@ export default function Home() {
           </h3>
 
           <p className="heroDescription">
-            NEXIX NX offers world-class digital printing machines and premium
-            inks with unmatched service and technical support.
-          </p>
+  NEXIX NX is a digital printing machine supplier based in Surat, Gujarat,
+  offering advanced digital textile printing machines, sublimation printers,
+  direct-to-fabric printing machines, UV printers and premium digital printing
+  inks with reliable installation and technical support.
+</p>
 
           <div className="heroActions">
             <a className="primaryBtn" href="#machines">
@@ -1615,7 +1619,68 @@ export default function Home() {
        </div>
   </div>
 </section>
+{/* SEO CONTENT — DIGITAL PRINTING MACHINES IN SURAT */}
+<section
+  style={{
+    padding: "100px 30px",
+    maxWidth: "1200px",
+    margin: "0 auto",
+  }}
+>
+  <div
+    style={{
+      color: "#42c9ff",
+      fontSize: "13px",
+      fontWeight: 900,
+      letterSpacing: "4px",
+      marginBottom: "18px",
+    }}
+  >
+    DIGITAL PRINTING SOLUTIONS
+  </div>
 
+  <h2
+    style={{
+      fontSize: "clamp(36px, 5vw, 58px)",
+      fontWeight: 900,
+      margin: "0 0 25px",
+      letterSpacing: "-2px",
+    }}
+  >
+    Digital Printing Machines in Surat
+  </h2>
+
+  <p
+    style={{
+      color: "#9caabd",
+      fontSize: "16px",
+      lineHeight: 1.8,
+      maxWidth: "850px",
+      margin: 0,
+    }}
+  >
+    NEXIX NX provides digital printing machines and printing solutions for
+    textile and commercial printing businesses in Surat and across India.
+    Our product range includes sublimation printing machines,
+    direct-to-fabric printers, UV printing machines and other wide-format
+    printing solutions. We also provide premium digital printing inks,
+    machine installation, technical support and service solutions.
+  </p>
+
+  <p
+    style={{
+      color: "#9caabd",
+      fontSize: "16px",
+      lineHeight: 1.8,
+      maxWidth: "850px",
+      marginTop: "20px",
+    }}
+  >
+    Based in Surat, Gujarat, NEXIX NX supports businesses looking for
+    reliable digital textile printing technology, high-quality printing
+    equipment and dependable technical assistance.
+  </p>
+</section>
 {/* WORLDWIDE SERVICE NETWORK */}
 <section className="worldwideNetwork">
   <div className="worldwideNetworkImage">

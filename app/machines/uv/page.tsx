@@ -644,16 +644,18 @@ export default function UVPage() {
             <div className="eyebrow">WIDE-FORMAT UV PRINTING</div>
 
             <h1 className="heroTitle">
-              NEXIX
-              <br />
-              <span className="gradientText">NX-UV</span>
-            </h1>
+  UV Printing
+  <br />
+  <span className="gradientText">Machines</span>
+</h1>
 
             <p className="heroText">
-              A wide-format UV printing solution designed for advertising,
-              banners and demanding large-format production, with flexible
-              print widths from 1.8 to 5.2 metres.
-            </p>
+  NEXIX NX UV printing machines are designed for wide-format printing,
+  advertising graphics, banners and large-format commercial production.
+  With print widths from 1.8 to 5.2 metres, flexible printhead options
+  and production speeds of 100–200 metres per hour, the NX-UV is built
+  for demanding wide-format printing applications.
+</p>
 
             <div className="heroActions">
               <Link href="/quote?machine=NX-UV" className="primaryButton">
@@ -669,7 +671,7 @@ export default function UVPage() {
           <div className="machineImageBox">
             <img
               src="/machine-uv.png"
-              alt="NEXIX NX-UV wide-format UV printer"
+              alt="NEXIX NX-UV wide-format UV printing machine"
               className="machineImage"
             />
           </div>
@@ -696,17 +698,19 @@ export default function UVPage() {
         <div className="overviewContent">
           <div className="pinkEyebrow">WIDE-FORMAT PRODUCTION</div>
 
-          <h2 className="sectionTitle">
-            Built for wide-format
-            <br />
-            <span className="mutedTitle">advertising production.</span>
-          </h2>
+         <h2 className="sectionTitle">
+  Wide-format UV printing
+  <br />
+  <span className="mutedTitle">for commercial production.</span>
+</h2>
 
           <p className="bodyText">
-            NX-UV provides flexible wide-format printing from 1.8 metres up
-            to 5.2 metres, with multiple printhead and colour configurations
-            to suit different production requirements.
-          </p>
+  NEXIX NX UV printing machines provide flexible wide-format printing
+  from 1.8 metres up to 5.2 metres. The NX-UV is designed for banners,
+  advertising graphics, promotional displays, commercial graphics and
+  other large-format printing applications, with multiple printhead
+  and colour configurations available for different production needs.
+</p>
         </div>
       </section>
 
@@ -756,7 +760,40 @@ export default function UVPage() {
           ))}
         </div>
       </section>
+{/* SEO CONTENT */}
+<section className="uvSection overview">
+  <div className="overviewContent">
+    <div className="pinkEyebrow">UV PRINTING SOLUTIONS</div>
 
+    <h2 className="sectionTitle">
+      UV Printing Machines
+      <br />
+      <span className="mutedTitle">for wide-format applications.</span>
+    </h2>
+
+    <p className="bodyText">
+      NEXIX NX provides wide-format UV printing machines for businesses
+      involved in advertising, commercial graphics, promotional displays
+      and large-format printing. The NX-UV platform is designed to provide
+      flexible production widths, reliable machine operation and consistent
+      print output for demanding printing environments.
+    </p>
+
+    <p className="bodyText" style={{ marginTop: "22px" }}>
+      With printing widths ranging from 1.8 metres to 5.2 metres and
+      production speeds of 100–200 metres per hour, NEXIX NX UV printing
+      technology can support different production requirements. Available
+      Epson i3200 and Konica 512i printhead configurations and 4–8 colour
+      options provide flexibility when configuring the machine.
+    </p>
+
+    <p className="bodyText" style={{ marginTop: "22px" }}>
+      Based in Surat, Gujarat, NEXIX NX provides digital printing machines,
+      UV printing solutions and technical support for businesses looking
+      for reliable wide-format printing technology.
+    </p>
+  </div>
+</section>
       <section className="uvSection ctaSection">
         <div className="ctaBox">
           <div className="ctaEyebrow">READY FOR WIDE-FORMAT PRODUCTION?</div>
