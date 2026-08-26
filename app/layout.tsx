@@ -87,15 +87,36 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
-        {children}
-
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(organizationSchema),
-          }}
-        />
-      </body>
+  <script
+    type="application/ld+json"
+    dangerouslySetInnerHTML={{
+      __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        name: "NEXIX NX",
+        url: "https://nexix-nx.com",
+        logo: "https://nexix-nx.com/favicon.ico",
+        email: "nikeshvermaa@gmail.com",
+        telephone: "+916354671731",
+        description:
+          "NEXIX NX provides digital printing machines, textile printing machines, sublimation printers, UV printers, direct-to-fabric printing machines and digital printing inks.",
+        areaServed: {
+          "@type": "City",
+          name: "Surat",
+        },
+        address: {
+          "@type": "PostalAddress",
+          addressLocality: "Surat",
+          addressRegion: "Gujarat",
+          postalCode: "394210",
+          addressCountry: "IN",
+        },
+      }),
+    }}
+  />
+  {children}
+</body>
+      
     </html>
   );
 }
