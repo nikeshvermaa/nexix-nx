@@ -1465,58 +1465,74 @@ export default function Home() {
         animation: "machineScroll 28s linear infinite",
       }}
     >
-      {/* SET 1 */}
-      {[
-        {
-          title: "Sublimation",
-          subtitle: "High-Speed Textile Printing",
-          icon: "💧",
-          link: "/machines/sublimation",
-          text:
-            "High-performance sublimation printers engineered for polyester textile production.",
-        },
-        {
-          title: "Direct-to-Fabric",
-          subtitle: "Industrial Fabric Printing",
-          icon: "👕",
-          link: "/machines/direct-to-fabric",
-          text:
-            "Direct fabric printing solutions for high-quality textile production.",
-        },
-        {
-          title: "UV Printing",
-          subtitle: "Wide-Format UV Technology",
-          icon: "☀️",
-          link: "/machines/uv",
-          text:
-            "Versatile UV printing technology for banners, advertising and rigid applications.",
-        },
-        
-        /* DUPLICATE SET FOR INFINITE LOOP */
-        {
-          title: "Sublimation",
-          subtitle: "High-Speed Textile Printing",
-          icon: "💧",
-          link: "/machines/sublimation",
-          text:
-            "High-performance sublimation printers engineered for polyester textile production.",
-        },
-        {
-          title: "Direct-to-Fabric",
-          subtitle: "Industrial Fabric Printing",
-          icon: "👕",
-          link: "/machines/direct-to-fabric",
-          text:
-            "Direct fabric printing solutions for high-quality textile production.",
-        },
-        {
-          title: "UV Printing",
-          subtitle: "Wide-Format UV Technology",
-          icon: "☀️",
-          link: "/machines/uv",
-          text:
-            "Versatile UV printing technology for banners, advertising and rigid applications.",
-        },
+     {/* SET 1 */}
+{[
+  {
+    title: "Sublimation",
+    subtitle: "High-Speed Textile Printing",
+    icon: "💧",
+    link: "/machines/sublimation",
+    text:
+      "High-performance sublimation printers engineered for polyester textile production.",
+  },
+  {
+    title: "Direct-to-Fabric",
+    subtitle: "Industrial Fabric Printing",
+    icon: "👕",
+    link: "/machines/direct-to-fabric",
+    text:
+      "Direct fabric printing solutions for high-quality textile production.",
+  },
+  {
+    title: "UV Printing",
+    subtitle: "Wide-Format UV Technology",
+    icon: "☀️",
+    link: "/machines/uv",
+    text:
+      "Versatile UV printing technology for banners, advertising and rigid applications.",
+  },
+  {
+    title: "DTF Printing",
+    subtitle: "Direct-to-Film Technology",
+    icon: "🖨️",
+    link: "/machines/dtf",
+    text:
+      "DTF printing machines designed for garment printing, apparel decoration and textile transfer applications.",
+  },
+
+  /* DUPLICATE SET FOR INFINITE LOOP */
+  {
+    title: "Sublimation",
+    subtitle: "High-Speed Textile Printing",
+    icon: "💧",
+    link: "/machines/sublimation",
+    text:
+      "High-performance sublimation printers engineered for polyester textile production.",
+  },
+  {
+    title: "Direct-to-Fabric",
+    subtitle: "Industrial Fabric Printing",
+    icon: "👕",
+    link: "/machines/direct-to-fabric",
+    text:
+      "Direct fabric printing solutions for high-quality textile production.",
+  },
+  {
+    title: "UV Printing",
+    subtitle: "Wide-Format UV Technology",
+    icon: "☀️",
+    link: "/machines/uv",
+    text:
+      "Versatile UV printing technology for banners, advertising and rigid applications.",
+  },
+  {
+    title: "DTF Printing",
+    subtitle: "Direct-to-Film Technology",
+    icon: "🖨️",
+    link: "/machines/dtf",
+    text:
+      "DTF printing machines designed for garment printing, apparel decoration and textile transfer applications.",
+  },
         
       ].map((machine, index) => (
         <Link
@@ -1662,9 +1678,8 @@ export default function Home() {
     NEXIX NX provides digital printing machines and printing solutions for
     textile and commercial printing businesses in Surat and across India.
     Our product range includes sublimation printing machines,
-    direct-to-fabric printers, UV printing machines and other wide-format
-    printing solutions. We also provide premium digital printing inks,
-    machine installation, technical support and service solutions.
+direct-to-fabric printers, DTF printing machines, UV printing machines
+and other digital printing solutions.
   </p>
 
   <p
