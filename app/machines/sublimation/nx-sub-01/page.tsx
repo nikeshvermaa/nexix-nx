@@ -1,3 +1,36 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "NEXIX NX-SUB 01 | Heavy-Duty Sublimation Printing Machine",
+  description:
+    "NEXIX NX-SUB 01 is a 1.8 m heavy-duty sublimation printing machine designed for polyester textile printing, high production and consistent print output.",
+  keywords: [
+    "NEXIX NX-SUB 01",
+    "NX-SUB 01",
+    "heavy duty sublimation printing machine",
+    "sublimation printing machine",
+    "digital textile printing machine",
+    "polyester fabric printing machine",
+    "sublimation printer India",
+    "sublimation printing machine Surat",
+  ],
+  alternates: {
+    canonical: "https://nexix-nx.com/machines/sublimation/nx-sub-01",
+  },
+  openGraph: {
+    title: "NEXIX NX-SUB 01 | Heavy-Duty Sublimation Printing Machine",
+    description:
+      "1.8 m NEXIX NX-SUB 01 sublimation printing machine for polyester textile production and high-quality digital printing.",
+    url: "https://nexix-nx.com/machines/sublimation/nx-sub-01",
+    siteName: "NEXIX NX",
+    locale: "en_IN",
+    type: "website",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+};
 export default function NXSub01Page() {
   const specs = [
     ["Print Width", "1800 mm / 1.8 m"],
@@ -167,9 +200,9 @@ export default function NXSub01Page() {
                 maxWidth: "600px",
               }}
             >
-              A robust 1.8 m sublimation printer with a heavy-duty body,
-              designed for demanding textile production and excellent output,
-              especially for dark designs.
+              NEXIX NX-SUB 01 is a 1.8 m heavy-duty sublimation printing machine
+designed for polyester textile production, flexible printhead
+configurations and consistent high-quality print output.
             </p>
 
             <div
@@ -345,10 +378,22 @@ export default function NXSub01Page() {
               lineHeight: 1.8,
             }}
           >
-            NX-SUB 01 is designed for customers who need a robust 1.8 m
-            sublimation printing platform with flexible printhead
-            configurations, high production capability and an easy-to-operate
-            onboard control system.
+           NEXIX NX-SUB 01 is designed for textile manufacturers who need a robust
+1.8 m sublimation printing machine with flexible printhead
+configurations, high production capability and an easy-to-operate
+onboard control system for polyester textile printing.
+<p
+  style={{
+    color: "#aab6c9",
+    fontSize: "18px",
+    lineHeight: 1.8,
+    marginTop: "20px",
+  }}
+>
+  NEXIX NX is based in Surat, Gujarat, supporting textile businesses with
+  sublimation printing machines, digital textile printing technology,
+  installation assistance and technical support across India.
+</p>
           </p>
         </div>
       </section>

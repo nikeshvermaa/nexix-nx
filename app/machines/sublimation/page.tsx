@@ -2,27 +2,27 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Sublimation Printing Machines | NEXIX NX",
-  description:
-    "Explore NEXIX NX sublimation printing machines designed for high-performance polyester textile printing, productivity and excellent print output.",
-  keywords: [
-    "NEXIX NX sublimation printers",
-    "sublimation printing machines",
-    "sublimation textile printing machines",
-    "digital sublimation printer",
-    "polyester fabric printing machine",
-    "sublimation printer India",
-    "NEXIX NX-SUB 01",
-    "NEXIX NX-SUB 02",
-  ],
+title: "Sublimation Printing Machines in Surat | NEXIX NX",
+description:
+  "Explore NEXIX NX sublimation printing machines for polyester textile printing, digital textile production and high-quality sublimation applications in Surat, Gujarat and across India.",
+keywords: [
+  "sublimation printing machines",
+  "sublimation printing machine Surat",
+  "sublimation printer Surat",
+  "digital textile printing machine",
+  "polyester fabric printing machine",
+  "sublimation printing machine India",
+  "NEXIX NX-SUB 01",
+  "NEXIX NX-SUB 02",
+],
   alternates: {
     canonical: "https://nexix-nx.com/machines/sublimation",
   },
   openGraph: {
-    title: "Sublimation Printing Machines | NEXIX NX",
-    description:
-      "High-performance NEXIX NX sublimation printing machines engineered for precision, productivity and polyester textile printing.",
-    url: "https://nexix-nx.com/machines/sublimation",
+    title: "Sublimation Printing Machines in Surat | NEXIX NX",
+description:
+  "NEXIX NX sublimation printing machines for polyester textile production, digital textile printing and high-quality sublimation applications.",
+url: "https://nexix-nx.com/machines/sublimation",
     siteName: "NEXIX NX",
     locale: "en_IN",
     type: "website",
@@ -99,10 +99,10 @@ export default function SublimationPage() {
 
        <p>
   NEXIX NX sublimation printing machines are designed for high-quality
-  digital textile printing on polyester fabrics, delivering reliable
-  production, excellent colour reproduction and consistent print output.
-  Our sublimation printing solutions are suitable for textile, fashion,
-  sportswear, signage and other polyester-based applications.
+digital textile printing on polyester fabrics, combining reliable
+production, consistent print output and excellent colour reproduction.
+Our sublimation printing solutions support textile, fashion, sportswear,
+home textile and other polyester-based applications.
 </p>
       </section>
 {/* SEO CONTENT */}
@@ -133,7 +133,7 @@ export default function SublimationPage() {
       fontWeight: 900,
     }}
   >
-    Sublimation Printing Machines
+    Digital Sublimation Printing Machines
   </h2>
 
   <p
@@ -144,11 +144,10 @@ export default function SublimationPage() {
       margin: "0 0 20px",
     }}
   >
-    NEXIX NX provides sublimation printing machines designed for high-quality
-    digital printing on polyester fabrics and other suitable sublimation
-    media. Our machines are engineered for reliable production, precise
-    colour reproduction and consistent print quality across demanding textile
-    applications.
+    NEXIX NX provides digital sublimation printing machines for polyester
+fabric printing and textile production. Our sublimation printers are
+designed for reliable production, precise colour reproduction and
+consistent print quality across a range of textile applications.
   </p>
 
   <p
@@ -173,9 +172,10 @@ export default function SublimationPage() {
       margin: 0,
     }}
   >
-    Based in Surat, Gujarat, NEXIX NX supports businesses looking for
-    dependable sublimation printing machines, digital textile printing
-    technology, installation assistance and technical support.
+    Based in Surat, Gujarat, NEXIX NX supports textile businesses looking for
+sublimation printing machines, digital textile printing technology,
+machine installation assistance and technical support. We serve customers
+in Surat and across India.
   </p>
 </section>
       {/* MACHINES */}

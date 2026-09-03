@@ -1,3 +1,37 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "NEXIX NX-SUB 02 | Compact Sublimation Printing Machine",
+  description:
+    "NEXIX NX-SUB 02 is a compact 1.8 m sublimation printing machine designed for polyester textile printing, efficient space utilization and high production.",
+  keywords: [
+    "NEXIX NX-SUB 02",
+    "NX-SUB 02",
+    "compact sublimation printing machine",
+    "sublimation printing machine",
+    "digital textile printing machine",
+    "polyester fabric printing machine",
+    "sublimation printer India",
+    "sublimation printing machine Surat",
+  ],
+  alternates: {
+    canonical: "https://nexix-nx.com/machines/sublimation/nx-sub-02",
+  },
+  openGraph: {
+    title: "NEXIX NX-SUB 02 | Compact Sublimation Printing Machine",
+    description:
+      "1.8 m NEXIX NX-SUB 02 sublimation printing machine designed for polyester textile production and efficient floor-space utilization.",
+    url: "https://nexix-nx.com/machines/sublimation/nx-sub-02",
+    siteName: "NEXIX NX",
+    locale: "en_IN",
+    type: "website",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+};
+
 export default function NXSub02Page() {
   const specifications = [
     ["PRINT WIDTH", "1800 mm / 1.8 m"],
@@ -127,9 +161,9 @@ export default function NXSub02Page() {
             margin: 0,
           }}
         >
-          A compact 1.8 m sublimation printer engineered to reduce space
-          coverage while delivering high production, excellent print output
-          and reliable operation for polyester textile applications.
+          NEXIX NX-SUB 02 is a compact 1.8 m sublimation printing machine
+          designed for polyester textile production, efficient floor-space
+          utilization and reliable high-quality print output.
         </p>
       </section>
 
@@ -214,9 +248,23 @@ export default function NXSub02Page() {
                 marginBottom: "28px",
               }}
             >
-              NX-SUB 02 combines a compact machine structure with high
+              NEXIX NX-SUB 02 combines a compact machine structure with high
               production capability, making it suitable for textile
-              manufacturers looking for efficient floor-space utilization.
+              manufacturers looking for an efficient sublimation printing
+              machine with reduced floor-space requirements.
+            </p>
+
+            <p
+              style={{
+                color: "#9caabd",
+                fontSize: "16px",
+                lineHeight: "1.7",
+                marginBottom: "28px",
+              }}
+            >
+              NEXIX NX is based in Surat, Gujarat and supports textile
+              businesses across India with digital textile printing technology,
+              machine installation assistance and technical support.
             </p>
 
             {features.map((feature, index) => (
@@ -488,7 +536,6 @@ export default function NXSub02Page() {
         </section>
       </section>
 
-
       {/* MOBILE RESPONSIVE */}
       <style>{`
         @media (max-width: 768px) {
@@ -501,10 +548,12 @@ export default function NXSub02Page() {
             padding: 0 16px !important;
             gap: 10px !important;
           }
+
           header a {
             font-size: 10px !important;
             white-space: nowrap !important;
           }
+
           header > div {
             font-size: 16px !important;
             white-space: nowrap !important;
@@ -514,11 +563,13 @@ export default function NXSub02Page() {
           main > section:nth-of-type(1) {
             padding: 48px 18px 40px !important;
           }
+
           main > section:nth-of-type(1) h1 {
             font-size: 45px !important;
             line-height: 1 !important;
             letter-spacing: -2px !important;
           }
+
           main > section:nth-of-type(1) p {
             font-size: 15px !important;
             line-height: 1.7 !important;
@@ -528,10 +579,12 @@ export default function NXSub02Page() {
           main > section:nth-of-type(2) {
             padding: 0 18px 60px !important;
           }
+
           main > section:nth-of-type(2) > div:first-child {
             grid-template-columns: 1fr !important;
             gap: 18px !important;
           }
+
           main > section:nth-of-type(2) > div:first-child > div:first-child {
             min-height: 270px !important;
             height: auto !important;
@@ -539,21 +592,25 @@ export default function NXSub02Page() {
             border-radius: 18px !important;
             order: 1 !important;
           }
+
           main > section:nth-of-type(2) > div:first-child > div:first-child img {
             width: 100% !important;
             max-width: 100% !important;
             max-height: 255px !important;
             object-fit: contain !important;
           }
+
           main > section:nth-of-type(2) > div:first-child > div:last-child {
             padding: 23px 18px !important;
             border-radius: 18px !important;
             order: 2 !important;
           }
+
           main > section:nth-of-type(2) > div:first-child > div:last-child h2 {
             font-size: 29px !important;
             line-height: 1.15 !important;
           }
+
           main > section:nth-of-type(2) > div:first-child > div:last-child p {
             font-size: 14px !important;
             line-height: 1.7 !important;
@@ -563,14 +620,17 @@ export default function NXSub02Page() {
           main > section:nth-of-type(2) > section:nth-of-type(1) {
             margin-top: 55px !important;
           }
+
           main > section:nth-of-type(2) > section:nth-of-type(1) h2 {
             font-size: 33px !important;
             line-height: 1.1 !important;
           }
+
           main > section:nth-of-type(2) > section:nth-of-type(1) > div:last-child {
             grid-template-columns: 1fr !important;
             gap: 9px !important;
           }
+
           main > section:nth-of-type(2) > section:nth-of-type(1) > div:last-child > div {
             padding: 18px !important;
           }
@@ -581,10 +641,12 @@ export default function NXSub02Page() {
             padding: 30px 18px !important;
             border-radius: 18px !important;
           }
+
           main > section:nth-of-type(2) > section:nth-of-type(2) > div {
             grid-template-columns: 1fr !important;
             gap: 28px !important;
           }
+
           main > section:nth-of-type(2) > section:nth-of-type(2) > div > div > div:first-child {
             font-size: 38px !important;
           }
@@ -593,10 +655,12 @@ export default function NXSub02Page() {
           main > section:nth-of-type(2) > section:nth-of-type(3) {
             margin-top: 55px !important;
           }
+
           main > section:nth-of-type(2) > section:nth-of-type(3) h2 {
             font-size: 32px !important;
             line-height: 1.1 !important;
           }
+
           main > section:nth-of-type(2) > section:nth-of-type(3) > div:last-child {
             grid-template-columns: 1fr !important;
             gap: 10px !important;
@@ -608,14 +672,17 @@ export default function NXSub02Page() {
             padding: 45px 18px !important;
             border-radius: 18px !important;
           }
+
           main > section:nth-of-type(2) > section:nth-of-type(4) h2 {
             font-size: 35px !important;
             line-height: 1.08 !important;
           }
+
           main > section:nth-of-type(2) > section:nth-of-type(4) p {
             font-size: 14px !important;
             line-height: 1.6 !important;
           }
+
           main > section:nth-of-type(2) > section:nth-of-type(4) a {
             display: block !important;
             width: 100% !important;
